@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Copacabana Beach",
+    "type": "beach",
+    "description": "A famous beach in Rio de Janeiro, known for its vibrant atmosphere.",
+    "imageUrl": "./images/copacabana.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Waikiki Beach",
+    "type": "beach",
+    "description": "Popular beach in Honolulu, Hawaii, with surfing and scenic views.",
+    "imageUrl": "./images/copacabana.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Grand Palace Temple",
+    "type": "temple",
+    "description": "An iconic Buddhist temple complex in Bangkok, Thailand.",
+    "imageUrl": "./images/back-hk.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Angkor Wat",
+    "type": "temple",
+    "description": "A vast temple complex in Cambodia, known for its intricate stone carvings.",
+    "imageUrl": "./images/back-hk.jpg"
+  },
+  {
+    "id": 5,
+    "name": "France",
+    "type": "country",
+    "description": "A European nation celebrated for its art, fashion, wine, and rich culture.",
+    "imageUrl": "./images/back-hk.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Brazil",
+    "type": "country",
+    "description": "The largest country in South America, famous for its Carnival and soccer.",
+    "imageUrl": "./images/copacabana.jpg"
+  }
+]

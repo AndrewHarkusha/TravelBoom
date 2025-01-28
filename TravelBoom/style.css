@@ -1,0 +1,334 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Header (Navigation) */
+  .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .main-nav ul li {
+    margin-left: 20px;
+  }
+  
+  .main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s;
+  }
+  
+  .main-nav ul li a:hover {
+    color: #00bfa5;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .search-box input[type="text"] {
+    padding: 6px;
+  }
+  
+  .search-box button {
+    padding: 6px 12px;
+    background-color: #00bfa5;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .search-box button:hover {
+    background-color: #008f7c;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background: url('./images/back-hk.jpg') center/cover no-repeat;
+    backdrop-filter: brightness(10%);
+  }
+  
+  /* Vertical Social Icons */
+  .social-icons {
+    position: absolute;
+    top: 35%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Sample styles for placeholder icons */
+  .social-icons a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* Replace these placeholders with actual icons or Font Awesome classes */
+  .social-icons a.twitter {
+    background-image: url('https://img.icons8.com/?size=100&id=102907&format=png&color=ffffff');
+  }
+  .social-icons a.facebook {
+    background-image: url('https://img.icons8.com/?size=100&id=LL0Q6sp9VyLo&format=png&color=ffffff');
+  }
+  .social-icons a.instagram {
+    background-image: url('https://img.icons8.com/?size=100&id=RhYNENh5cxlS&format=png&color=ffffff');
+  }
+  .social-icons a.youtube {
+    background-image: url('https://img.icons8.com/?size=100&id=e19IaX7vpxi9&format=png&color=ffffff');
+  }
+  
+  /* Hero Content Centered */
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left;
+    max-width: 1200px;
+    width: 90%; /* gives a bit of flexibility on smaller screens */
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-align: both;
+    width: 40%;
+  }
+  
+  .cta-btn {
+    padding: 15px 30px;
+    background-color: #00bfa5;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #008f7c;
+  }
+
+
+  .hero-overlay {
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Larger text for About Us hero */
+  .hero-overlay h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  
+  /* Example if you want a slightly darker overlay background:
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  .hero-overlay {
+    position: relative;
+    z-index: 2;
+  }
+  */
+  
+  /* About Content */
+  .about-content {
+    background-color: #fff;
+    padding: 50px 0;
+  }
+  
+  .about-content .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Team Section */
+  .team-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  .team-section .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .team-section h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .team-section h2 span {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #777;
+    text-transform: none;
+  }
+  
+  /* Team Cards Layout */
+  .team-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  
+  .team-card {
+    background-color: #fffa;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  .team-header h2 {
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .team-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #666;
+    width: 100%;
+  }
+  
+  .role-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #00bfa5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .role-btn:hover {
+    background-color: #008f7c;
+  }
+
+
+  /* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+  }
+  
+  .contact-form input[type="text"]:focus,
+  .contact-form input[type="email"]:focus,
+  .contact-form textarea:focus {
+    border-color: #00bfa5;
+  }
+  
+  .submit-btn {
+    padding: 12px 20px;
+    background-color: #00bfa5;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    align-self: flex-start;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #008f7c;
+  }
+  
+  /* Footer (Optional) */
+  .site-footer {
+    text-align: center;
+    padding: 20px;
+    background: #f2f2f2;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
